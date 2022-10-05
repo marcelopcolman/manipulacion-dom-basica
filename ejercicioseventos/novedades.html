@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 cosas pocos conocidas de html</title>
+</head>
+<body>
+    
+    <div contenteditable="true">Hola soy un div</div>
+    <label contenteditable="true">Soy un label</label><br>
+    <button contenteditable="true">Boton</button>
+    <input type="color" value="#f0fd10"/>
+    <p>Habia una vez un dev
+       que le <mark>parecia bien </mark>el c++
+    </p>
+    <meter min="0" max="100" value="80"></meter><br>
+    <progress min="0" max="100" value="80"></progress>
+   
+    <details open> <!--poniendo open aparece el acordeon abierto-->
+        <summary>Programacion backend</summary>
+        La programacion backend es para tipos bien 
+    </details>
+    <br>
+    <br>
+    <button onclick="dlg.showModal()">Abrir</button>
+    <dialog id="dlg">
+        <button onclick="dlg.close()">Cerrar</button>
+        Hola coca cola como estas?
+    </dialog>
+<!--Haciendo click en el label poner el focus en el input-->
+    <br><br>
+    <label for="myText">Poner foco</label>
+    <input type="text" id="myText"/>
+    <br><br>
+    <label for="myCheck">Chequear</label>
+    <input type="checkbox" id="myCheck"/>
+    <br><br>
+<select>
+    <optgroup label="Cerveza mexicana"></optgroup>
+    <option>Minerva Stout</option>
+    <option>Ticus Colima</option>
+    <optgroup label="Cerveza alemana"></optgroup>
+    <option>Pikantus</option>
+    <option>Dunkel Erdinger</option>
+</select>
+<br><br>
+<!--Podemos hacer un autocomplete de una forma facil-->
+<label>Elegir cerveza:</label>
+<input list="beers" type="text" placeholder="seleccionar"/>
+<datalist id="beers">
+    <option value="Erdinger">
+    <option value="Corona">
+    <option value="Heineken">
+    <option value="Budweiser">
+    <option value="Bud Light">
+    <option value="Delirium">
+</datalist>
+<br><br>
+    <marquee><h1>Hola mira como queda</h1></marquee>
+
+</body>
+</html>
